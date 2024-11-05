@@ -1,1 +1,13 @@
-name "test"
+on: push
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+      - run : echo "Hello World"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: node version
+      - run : node -v
